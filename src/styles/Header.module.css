@@ -1,0 +1,119 @@
+.mainWrapper {
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    padding: 2rem 1rem 1rem;
+}
+
+.logo {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 4rem;
+    height: 4rem;
+    fill: white;
+}
+
+.linksWrapper {
+    grid-area: 1 / 2 / 2 / 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialsWrapper {
+    grid-area: 1 / 6 / 2 / 7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link {
+    vertical-align: middle;
+    font-size: 2rem;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.75);
+    transition: 0.4s ease;
+}
+
+.link:hover {
+     color: white;
+     opacity: 1;
+     cursor: pointer;
+ }
+
+.socials {
+    transition: 0.3s ease;
+    color: white;
+    border-radius: 100%;
+    padding: 8px;
+    margin-left: 50px;
+}
+
+.socials:hover {
+    background-color: #212d45;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainWrapper {
+        margin: 0 50px;
+    }
+    .linksWrapper {
+        grid-area: 1 / 2 / 2 / 5;
+    }
+    .socials {
+        margin-left: 33px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mainWrapper {
+        margin: 0 50px;
+    }
+    .socials {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .mainWrapper {
+        margin: 0 25px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .mainWrapper {
+        margin: 0 20px;
+        grid-template-rows: repeat(2, 60px);
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 0.5rem;
+    }
+
+    .logoWrapper {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .linksWrapper {
+        grid-area: 2 / 1 / 3 / 7;
+    }
+
+    .socialsWrapper {
+        align-items: center;
+        grid-area: 1 / 5 / 2 / 7;
+    }
+
+    .a {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mainWrapper {
+        margin: 0 15px;
+    }
+}
