@@ -1,0 +1,16 @@
+.projectsWrapper {
+    padding: 10px 0 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    row-gap: 3rem;
+}
+
+@media screen and (max-width: 965px) {
+    .projectsWrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0 20px;
+    }
+}

@@ -103,9 +103,3 @@
         grid-area: 1 / 5 / 2 / 7;
     }
 }
-
-@media screen and (max-width: 400px) {
-    .mainWrapper {
-        margin: 0 15px;
-    }
-}

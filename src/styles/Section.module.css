@@ -1,15 +1,26 @@
 .wrapper {
-    margin: 90px auto;
+    margin: 45px auto;
     padding: 0 48px;
     display: grid;
     flex-direction: row;
-    grid-template-columns: 1fr 1fr;;
     max-width: 1040px;
     overflow: hidden;
+    position: relative;
+}
+
+.overrideWrapper {
+    margin: 45px auto;
+    padding: 0 48px;
+    display: grid;
+    flex-direction: row;
+    max-width: 1040px;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    z-index: 5;
 }
 
 .title {
-    z-index: 10;
     font-weight: 800;
     font-size: 65px;
     line-height: 72px;
@@ -23,7 +34,6 @@
 }
 
 .subtitle {
-    z-index: 10;
     font-size: 25px;
     font-weight: normal;
     color: #C04CFD;
@@ -32,7 +42,6 @@
 }
 
 .text {
-    z-index: 10;
     max-width: 800px;
     font-size: 24px;
     line-height: 40px;
@@ -47,15 +56,24 @@
 }
 
 .divider {
-    width: 64px;
+    width: 50%;
     height: 6px;
     border-radius: 10px;
-    background: white linear-gradient(270deg, #F46737 0%, #945DD6 100%);
-    margin: 4rem 0;
+    background: white linear-gradient(270deg, #00CCFF 0%, #C04CFD 100%);
+    margin: 75px 0 20px;
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        padding: 0 24px;
+    }
 }
 
 @media screen and (max-width: 640px) {
     .wrapper {
         margin: 20px auto;
+    }
+    .subtitle {
+        text-align: center;
     }
 }

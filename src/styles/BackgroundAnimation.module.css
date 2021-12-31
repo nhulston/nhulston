@@ -2,13 +2,14 @@
     position: relative;
     display: grid;
     right: -20px;
-    top: -70px;
+    top: -20px;
 }
 
 .circle {
+    z-index: 5;
     grid-column: 1;
     grid-row: 1;
-    position: relative;
+    position: absolute;
     width: calc(500px - (var(--nth-child) * 50px));
     height: calc(500px - (var(--nth-child) * 50px));
     display: flex;
