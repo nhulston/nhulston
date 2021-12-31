@@ -24,8 +24,8 @@ const Header = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="#about">
-                        <a className={styles.link}>About</a>
+                    <Link href="#awards">
+                        <a className={styles.link}>Awards</a>
                     </Link>
                 </li>
             </div>

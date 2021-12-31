@@ -34,7 +34,7 @@ const Technologies = () => {
                     <Technology title="UI/UX" description={`Skilled with Figma\nand graphic design`} icon={icons[3]}/>
                 </ul>
             </div>
-            <div className={sectionStyles.divider}/>
+            <div className={sectionStyles.divider} id="awards"/>
         </SectionWrapper>
     );
 };

@@ -23,7 +23,7 @@ const Hero = () => {
                 </div>
             </div>
             <BackgroundAnimation/>
-            <div className={sectionStyles.divider}/>
+            <div className={sectionStyles.divider} id="projects"/>
         </div>
     );
 };

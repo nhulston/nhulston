@@ -3,9 +3,9 @@ import sectionStyles from "../styles/Section.module.css";
 
 const SectionWrapper = ({children}) => {
     return (
-        <div className={sectionStyles.wrapper}>
+        <section className={sectionStyles.wrapper}>
             {children}
-        </div>
+        </section>
     );
 };
 
