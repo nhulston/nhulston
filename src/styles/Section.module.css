@@ -56,11 +56,12 @@
 }
 
 .divider {
-    width: 50%;
+    width: 33.3%;
     height: 6px;
     border-radius: 10px;
     background: white linear-gradient(270deg, #00CCFF 0%, #C04CFD 100%);
     margin: 75px 0 20px;
+    grid-area: 2 / 1 / 3 / 3;
 }
 
 @media screen and (max-width: 400px) {

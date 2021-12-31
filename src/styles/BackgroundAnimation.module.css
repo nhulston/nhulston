@@ -32,7 +32,7 @@
 .circle:after {
     content: '';
     position: absolute;
-    inset: calc(2px - 0.25px * var(--nth-child));
+    inset: calc(2px - 0.22px * var(--nth-child));
     background: #0F1624;
     border-radius: 50%;
 }
@@ -45,6 +45,7 @@
 .circle:nth-child(3) { --nth-child: 3 }
 .circle:nth-child(4) { --nth-child: 4 }
 .circle:nth-child(5) { --nth-child: 5 }
+.circle:nth-child(6) { --nth-child: 6 }
 
 @keyframes animate {
     0% {

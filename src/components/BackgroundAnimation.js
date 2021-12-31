@@ -9,6 +9,7 @@ const BackgroundAnimation = () => {
             <div className={backgroundAnimation.circle}/>
             <div className={backgroundAnimation.circle}/>
             <div className={backgroundAnimation.circle}/>
+            <div className={backgroundAnimation.circle}/>
         </div>
     );
 };

@@ -12,11 +12,11 @@
 
 @media screen and (min-width: 965px) {
     .wrapper:nth-child(odd) {
-        transform-origin: top left;
+        transform-origin: left;
     }
 
     .wrapper:nth-child(even) {
-        transform-origin: top right;
+        transform-origin: right;
     }
 
     .wrapper:hover {

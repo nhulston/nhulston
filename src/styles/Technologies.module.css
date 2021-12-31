@@ -1,0 +1,37 @@
+.list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+    .list {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .list {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .list {
+        justify-items: center;
+    }
+}

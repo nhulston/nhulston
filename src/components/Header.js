@@ -19,8 +19,8 @@ const Header = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="#skills">
-                        <a className={styles.link}>Skills</a>
+                    <Link href="#technologies">
+                        <a className={styles.link}>Technologies</a>
                     </Link>
                 </li>
                 <li>
