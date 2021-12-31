@@ -1,7 +1,6 @@
 .wrapper {
     margin: 45px auto;
     padding: 0 48px;
-    display: grid;
     flex-direction: row;
     max-width: 1040px;
     overflow: hidden;

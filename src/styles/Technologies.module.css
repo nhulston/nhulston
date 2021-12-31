@@ -35,3 +35,15 @@
         justify-items: center;
     }
 }
+
+@media screen and (max-width: 510px) {
+    .visibleOnLarge {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 510px) {
+    .visibleOnSmall {
+        display: none;
+    }
+}

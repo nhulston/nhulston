@@ -1,53 +1,85 @@
 import React from 'react';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+import SwiperCore, {Autoplay, EffectCoverflow, EffectCreative, EffectCube, EffectFlip, Pagination} from 'swiper';
+import 'swiper/css/pagination';
+
 import sectionStyles from '../styles/Section.module.css';
 import styles from '../styles/Awards.module.css';
+
 import SectionWrapper from "./SectionWrapper";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import Award from "./Award";
-import vercel from "/public/vercel.svg";
+
+import hackGT from "/public/hackathons/hackgt.jpeg";
+import invention from "/public/hackathons/invention.png";
+import georgiaTech from "/public/hackathons/georgiatech.png";
+import ncr from "/public/hackathons/ncr.png";
+import pinnacle from "/public/hackathons/pinnacle.png";
 
 const Awards = () => {
+    SwiperCore.use([Autoplay]);
+
+    const slides = [
+        <SwiperSlide key={0}>
+            <Award image={hackGT} hackathonOrganization="HackGT" date="Oct 2020" placing="1st Place" prizeName="HackGT 7 Overall Prize" projectName="Grocery Grab" />
+        </SwiperSlide>,
+        <SwiperSlide key={1}>
+            <Award image={invention} hackathonOrganization="Invention Studio" date="Sep 2020" placing="2nd Place" prizeName="IoT Hackathon Overall Prize" projectName="AC Daddy" />
+        </SwiperSlide>,
+        <SwiperSlide key={2}>
+            <Award image={georgiaTech} hackathonOrganization="GT / Emory" date="Jan 2021" placing="Top 10 Finalist" prizeName="Hack COVID Overall Prize" projectName="Bubbl" />
+        </SwiperSlide>,
+        <SwiperSlide key={3}>
+            <Award image={ncr} hackathonOrganization="NCR" date="July 2021" placing="Top 30 Finalist" prizeName="NCR Global Hackathon" projectName="Ghost Grub" />
+        </SwiperSlide>,
+        <SwiperSlide key={4}>
+            <Award image={pinnacle} hackathonOrganization="Pinnacle" date="Sep 2021" placing="3rd Place" prizeName="Stellar Sponsor Prize" projectName="NFT Highlights" />
+        </SwiperSlide>,
+    ];
+
     const responsive = {
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3,
-            slidesToSlide: 3
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
         },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2,
-            slidesToSlide: 2
+        360: {
+            slidesPerView: 1,
+            spaceBetween: -50,
         },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1,
-            slidesToSlide: 1
-        }
+        460: {
+            slidesPerView: 2,
+            spaceBetween: 270,
+        },
+        550: {
+            slidesPerView: 2,
+            spaceBetween: 200,
+        },
+        700: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        },
+        1050: {
+            slidesPerView: 3,
+            spaceBetween: -50,
+        },
     };
 
     return (
         <SectionWrapper>
             <h1 className={sectionStyles.title}>Awards</h1>
-            <Carousel
-                swipeable={true}
-                draggable={true}
-                showDots={false}
-                responsive={responsive}
-                ssr={true}
-                infinite={true}
-                autoPlay={true} //TODO false for mobile
-                autoPlaySpeed={1000}
-                keyBoardControl={false}
-                customTransition="all .5"
-                transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-                // deviceType={this.props.deviceType}
-                itemClass="carousel-item-padding-40-px"
-            >
-                <Award placing="1st Place Overall" prizeName="HackGT 7" projectName="Grocery Grab" image={vercel} hackathonOrganization="HackGT"/>
-            </Carousel>
+            <div className={styles.swiperWrapper}>
+                <Swiper
+                    modules={[Pagination]}
+                    id="main"
+                    breakpoints={responsive}
+                    grabCursor={true}
+                    autoplay={{delay: 5000}}
+                    pagination={{"dynamicBullets": true, clickable: true}}
+                    centeredSlides={true}
+                >
+                    {slides}
+                </Swiper>
+            </div>
         </SectionWrapper>
     );
 };

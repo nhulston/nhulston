@@ -1,23 +1,58 @@
 .wrapper {
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px rgba(80, 80, 80, 0.5);
+    text-align: center;
+    width: 250px;
+    padding: 20px 20px 30px;
+    margin: 50px 20px;
+    background: #0F1624;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
 
+.imageWrapper {
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .image {
-
+    pointer-events: none;
+    border-radius: 20px;
+    display: inline-block;
+    margin: auto;
+    background: white;
 }
 
-.hackathonName {
+.hackathonOrganization {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 2rem;
+    font-weight: bold;
+}
 
+.date {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.15rem;
 }
 
 .placing {
-
+    color: white;
+    font-size: 3rem;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .prizeName {
-
+    color: #C04CFD;
+    font-size: 1.5rem;
 }
 
 .projectName {
-
+    color: white;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-top: 15px;
 }

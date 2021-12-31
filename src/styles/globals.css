@@ -31,3 +31,13 @@ button {
     justify-content: center;
     cursor: pointer;
 }
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #C04CFD;
+    opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    opacity: .5;
+    background-color: white;
+}

@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Project = ({name, description, img, tools, github, demo}) => {
     return (
         <div className={styles.wrapper}>
-            <Image className={styles.image} src={img} alt=""/>
+            <Image className={styles.image} src={img} alt="" draggable="false" />
             <div className={styles.titleWrapper}>
                 <h3 className={styles.title}>{name}</h3>
                 <hr className={styles.hr}/>
