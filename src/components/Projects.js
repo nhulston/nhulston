@@ -17,7 +17,7 @@ const Projects = () => {
                     <Project name="Example Name" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur, exercitationem molestias neque nostrum, officia quam reprehenderit repudiandae sequi unde vel veniam? Ad fugit illum, impedit minima sint tenetur voluptas? lorem" tools={["React", "Javascript", "Flutter"]} demo="https://google.com" github="https://google.com" img={one}/>
                     <Project name="Example Name" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur, exercitationem molestias neque nostrum, officia quam reprehenderit repudiandae sequi unde vel veniam? Ad fugit illum, impedit minima sint tenetur voluptas? lorem" tools={["React", "Javascript", "Flutter"]} demo="https://google.com" github="https://google.com" img={one}/>
                 </div>
-                <div className={sectionStyles.divider}  id="technologies"/>
+                <div className={sectionStyles.divider}  id="tech"/>
             </div>
         </SectionWrapper>
     );
