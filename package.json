@@ -1,11 +1,11 @@
 {
+  "homepage": "https://nhulston.github.io/",
   "name": "nhulston",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "export": "next export"
   },
   "dependencies": {
