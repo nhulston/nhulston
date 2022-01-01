@@ -58,7 +58,10 @@
 
 @media screen and (max-width: 768px) {
     .wrapper {
-        grid-area: 1 / 2 / 1 / 3;
+        grid-area: 1 / 2 / 2 / 3;
+        opacity: 0.5;
+        position: fixed;
+        top: -500px;
     }
 }
 
@@ -68,12 +71,6 @@
         height: calc(400px - (var(--nth-child) * 50px));
         left: calc(var(--nth-child) * 25px);
         top: calc(var(--nth-child) * 25px + 50px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .wrapper {
-        opacity: 0.5;
     }
 }
 
