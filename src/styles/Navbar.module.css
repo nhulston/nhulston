@@ -7,15 +7,15 @@
     padding: 2rem 1rem 1rem;
 }
 
-.logo {
+.name {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
-    flex-direction: row;
-    align-self: center;
-    width: 4rem;
-    height: 4rem;
-    fill: white;
-    padding-top: 3px;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    line-height: 32px;
+    color: white;
+    padding-top: 6px;
+    font-weight: bold;
 }
 
 .linksWrapper {

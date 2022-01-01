@@ -33,7 +33,7 @@
     content: '';
     position: absolute;
     inset: calc(2px - 0.22px * var(--nth-child));
-    background: #0F1624;
+    background: #0E131F;
     border-radius: 50%;
 }
 .circle:nth-child(even):before {

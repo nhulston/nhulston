@@ -7,6 +7,33 @@
     row-gap: 3rem;
 }
 
+.filter {
+    font-size: 25px;
+    font-weight: normal;
+    color: #878B91;
+    /*color: #C04CFD;*/
+    margin-bottom: 20px;
+}
+
+.selected {
+    color: #C04CFD;
+    text-decoration: underline;
+    transition: .5s ease;
+}
+
+.selected:hover {
+    color: #c573ff;
+}
+
+.unselected {
+    transition: .5s ease;
+}
+
+.unselected:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 @media screen and (max-width: 965px) {
     .projectsWrapper {
         display: flex;

@@ -9,10 +9,11 @@
 html {
     font-size: 65%;
     scroll-behavior: smooth;
+    background: #060b14;
 }
 
 body {
-    background: #0F1624;
+    background: #0E131F;
     cursor: default;
 }
 

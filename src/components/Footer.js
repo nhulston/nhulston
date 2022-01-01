@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Footer.module.css';
-import headerStyles from '../styles/Header.module.css';
+import navbarStyles from '../styles/Navbar.module.css';
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
 
 const Footer = () => {
@@ -23,10 +23,10 @@ const Footer = () => {
                     <p className={styles.copyright}>Made with ♥ by Nick Hulston</p>
                 </div>
                 <div className={styles.iconsWrapper}>
-                    <a href="https://github.com/nhulston" className={headerStyles.socials} target="_blank" rel="noreferrer">
+                    <a href="https://github.com/nhulston" className={navbarStyles.socials} target="_blank" rel="noreferrer">
                         <AiFillGithub size="3rem" />
                     </a>
-                    <a href="https://www.linkedin.com/in/nhulston/" className={headerStyles.socials} target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/nhulston/" className={navbarStyles.socials} target="_blank" rel="noreferrer">
                         <AiFillLinkedin size="3rem" />
                     </a>
                 </div>

@@ -3,7 +3,7 @@
     padding: 0 48px;
     flex-direction: row;
     max-width: 1040px;
-    overflow: hidden;
+    width: 100%;
     position: relative;
 }
 
@@ -13,9 +13,8 @@
     display: grid;
     flex-direction: row;
     max-width: 1040px;
-    overflow: hidden;
-    grid-template-columns: 1fr 1fr;
     position: relative;
+    grid-template-columns: 1fr 1fr;
     z-index: 5;
 }
 

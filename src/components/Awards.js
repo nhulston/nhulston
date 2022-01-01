@@ -1,7 +1,7 @@
 import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
-import SwiperCore, {Autoplay, EffectCoverflow, EffectCreative, EffectCube, EffectFlip, Pagination} from 'swiper';
+import SwiperCore, {Autoplay, Pagination} from 'swiper';
 import 'swiper/css/pagination';
 
 import sectionStyles from '../styles/Section.module.css';
@@ -80,6 +80,7 @@ const Awards = () => {
                     {slides}
                 </Swiper>
             </div>
+            <div className={sectionStyles.divider} id="projects"/>
         </SectionWrapper>
     );
 };

@@ -1,23 +1,15 @@
 import React from 'react';
 import Link from "next/link";
-import {DiCssdeck} from "react-icons/di";
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
-import styles from '../styles/Header.module.css';
+import styles from '../styles/Navbar.module.css';
 
-const Header = () => {
+const Navbar = () => {
     return (
         <div className={styles.mainWrapper}>
             <Link href="/" passHref>
-                <a>
-                    <DiCssdeck size="3rem" className={styles.logo}/>
-                </a>
+                <a className={styles.name}>Nick Hulston</a>
             </Link>
             <div className={styles.linksWrapper}>
-                <li>
-                    <Link href="#projects">
-                        <a className={styles.link}>Projects</a>
-                    </Link>
-                </li>
                 <li>
                     <Link href="#tech">
                         <a className={styles.link}>Tech</a>
@@ -26,6 +18,11 @@ const Header = () => {
                 <li>
                     <Link href="#awards">
                         <a className={styles.link}>Awards</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="#projects">
+                        <a className={styles.link}>Projects</a>
                     </Link>
                 </li>
             </div>
@@ -41,4 +38,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Navbar;

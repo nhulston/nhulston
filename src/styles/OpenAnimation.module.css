@@ -1,0 +1,72 @@
+.blackOverlay {
+    width: 100%;
+    height: 100%;
+    background: #060b14;
+    position: fixed;
+    z-index: 10;
+    animation: moveUp .5s ease-in forwards;
+    /*opacity: 0*/
+}
+
+@keyframes moveUp {
+    from { transform: translateY(0%) }
+    to { transform: translateY(-100%) }
+}
+
+.name {
+    z-index: 50;
+    transform: translateX(-200%);
+    animation: moveRight .7s .55s ease-out forwards;
+}
+
+.subtitle {
+    z-index: 50;
+    transform: translateX(-200%);
+    animation: moveRight .8s .2s ease-out forwards;
+}
+
+.bio {
+    z-index: 50;
+    transform: translateX(-200%);
+    animation: moveRight .7s .5s ease-out forwards;
+}
+
+@keyframes moveRight {
+    from { transform: translateX(-200%); opacity: 0 }
+    to { transform: translateX(0); opacity: 1 }
+}
+
+.backgroundAnimation {
+    transform: translateX(70%);
+    animation: moveLeft .8s .2s ease-out forwards;
+}
+
+@keyframes moveLeft {
+    from { transform: translateX(70%); opacity: 0 }
+    to { transform: translateX(0); opacity: 1 }
+}
+
+.buttonFade {
+    animation: fadeIn 1.5s .7s linear forwards;
+    opacity: 0
+}
+
+@keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+.divider {
+    transform: translateX(-200%);
+    animation: moveRight .7s .5s ease-out forwards;
+}
+
+.navBar {
+    transform: translateY(-90px);
+    animation: moveDown .5s .6s ease-out forwards;
+}
+
+@keyframes moveDown {
+    from { transform: translateY(-90px) }
+    to { transform: translateY(0) }
+}

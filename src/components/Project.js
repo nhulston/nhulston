@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Project = ({name, description, img, tools, github, demo}) => {
     return (
         <div className={styles.wrapper}>
-            <Image className={styles.image} src={img} alt="" draggable="false" />
+            <Image className={styles.image} src={img} alt="" draggable="false" height={449} width={660}/>
             <div className={styles.titleWrapper}>
                 <h3 className={styles.title}>{name}</h3>
                 <hr className={styles.hr}/>
@@ -19,8 +19,8 @@ const Project = ({name, description, img, tools, github, demo}) => {
                 </ul>
             </div>
             <ul className={styles.linksWrapper}>
-                <a className={styles.link} href={github} target="_blank" rel="noreferrer">Github</a>
-                <a className={styles.link}  href={demo} target="_blank" rel="noreferrer">Demo</a>
+                {demo && <a className={styles.link} href={demo} target="_blank" rel="noreferrer">Demo</a>}
+                {github && <a className={styles.link} href={github} target="_blank" rel="noreferrer">Github</a>}
             </ul>
         </div>
     );
