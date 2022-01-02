@@ -77,3 +77,16 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 670px) {
+    .overrideWrapper {
+        margin: 0 auto;
+        padding: 0 48px;
+        display: grid;
+        flex-direction: row;
+        max-width: 1040px;
+        position: relative;
+        grid-template-columns: 1fr 1fr;
+        z-index: 5;
+    }
+}

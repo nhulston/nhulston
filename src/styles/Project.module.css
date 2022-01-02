@@ -36,7 +36,6 @@
     color: white;
     padding-top: 15px;
     font-size: 3rem;
-    font-family: 'Space Grotesk', sans-serif;
 }
 
 .hr {
@@ -86,6 +85,12 @@
 
 .link:hover{
     background: #801414;
+}
+
+@media screen and (max-width: 965px) {
+    .wrapper {
+        min-height: 0;
+    }
 }
 
 @media screen and (max-width: 520px) {
