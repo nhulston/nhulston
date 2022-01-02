@@ -25,9 +25,14 @@ const Hero = () => {
                 </div>
                 <div className={openAnimation.buttonFade}>
                     <div className={styles.buttonWrapper}>
-                        <button className={styles.button} >
-                            View Resume
-                        </button>
+                        <a
+                            href="/pdf/Nicholas-Hulston-Resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <button className={styles.button} >
+                                View Resume
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
