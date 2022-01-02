@@ -4,7 +4,7 @@
     background: #060b14;
     position: fixed;
     z-index: 10;
-    animation: moveUp .5s ease-in forwards;
+    animation: moveUp .7s ease-in forwards;
     /*opacity: 0*/
 }
 
