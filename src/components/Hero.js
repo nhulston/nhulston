@@ -15,7 +15,7 @@ const Hero = () => {
                 </div>
                 <div className={openAnimation.subtitle}>
                     <h3 className={sectionStyles.subtitle}>
-                        Developer<span className={styles.hideOnSmallScreen}> • </span><br className={styles.hideOnBigScreen}/>Entrepreneur • Creator
+                        Developer<span className={styles.hideOnSmallScreen}> • </span><br className={styles.hideOnBigScreen}/>Entrepreneur • Designer
                     </h3>
                 </div>
                 <div className={openAnimation.bio}>
