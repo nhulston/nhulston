@@ -11,11 +11,12 @@ import acDaddy from '/public/projects/acDaddy.png'
 import nftHighlights from '/public/projects/nftHighlights.png';
 import swipe from '/public/projects/swipe.png';
 import nhulston from '/public/projects/nhulston.png';
+import chatCore from '/public/projects/chatcore.png';
 import Project from "./Project";
 import Aos from "aos";
 
 const Projects = () => {
-    // 0 = all, 1 = mobile, 2 = web
+    // 0 = all, 1 = mobile, 2 = web, 3 = other
     const [filter, setFilter] = useState(0);
 
     const setAll = async () => {
@@ -33,6 +34,11 @@ const Projects = () => {
         await new Promise(resolve => setTimeout(resolve, 10));
         Aos.refresh();
     };
+    const setOther = async () => {
+        setFilter(3);
+        await new Promise(resolve => setTimeout(resolve, 10));
+        Aos.refresh();
+    };
 
     return (
         <SectionWrapper>
@@ -41,17 +47,26 @@ const Projects = () => {
                 {filter === 0 && <h1 className={styles.filter}>
                     <span className={styles.selected}>All</span>&nbsp;•&nbsp;
                     <span className={styles.unselected} onClick={setMobile}>Mobile</span>&nbsp;•&nbsp;
-                    <span className={styles.unselected} onClick={setWeb}>Web</span>
+                    <span className={styles.unselected} onClick={setWeb}>Web</span>&nbsp;•&nbsp;
+                    <span className={styles.unselected} onClick={setOther}>Other</span>
                 </h1>}
                 {filter === 1 && <h1 className={styles.filter}>
                     <span className={styles.unselected} onClick={setAll}>All</span>&nbsp;•&nbsp;
                     <span className={styles.selected}>Mobile</span>&nbsp;•&nbsp;
-                    <span className={styles.unselected} onClick={setWeb}>Web</span>
+                    <span className={styles.unselected} onClick={setWeb}>Web</span>&nbsp;•&nbsp;
+                    <span className={styles.unselected} onClick={setOther}>Other</span>
                 </h1>}
                 {filter === 2 && <h1 className={styles.filter}>
                     <span className={styles.unselected} onClick={setAll}>All</span>&nbsp;•&nbsp;
                     <span className={styles.unselected} onClick={setMobile}>Mobile</span>&nbsp;•&nbsp;
-                    <span className={styles.selected}>Web</span>
+                    <span className={styles.selected}>Web</span>&nbsp;•&nbsp;
+                    <span className={styles.unselected} onClick={setOther}>Other</span>
+                </h1>}
+                {filter === 3 && <h1 className={styles.filter}>
+                    <span className={styles.unselected} onClick={setAll}>All</span>&nbsp;•&nbsp;
+                    <span className={styles.unselected} onClick={setMobile}>Mobile</span>&nbsp;•&nbsp;
+                    <span className={styles.unselected} onClick={setWeb}>Web</span>&nbsp;•&nbsp;
+                    <span className={styles.selected}>Other</span>
                 </h1>}
                 <div className={styles.projectsWrapper}>
                     {(filter === 0 || filter === 1) && <Project name="NCR Check-In"
@@ -61,6 +76,10 @@ const Projects = () => {
                               description="Building a decentralized crypto exchange on the Cardano blockchain. My roles include front-end dev, smart contract dev, and marketing."
                               tools={["React", "Haskell", "Plutus"]} demo="https://jellyswap.io/"
                               github="https://github.com/jellyswap-io/jellyswap-landing-page" img={jellySwap}/>}
+                    {(filter === 0 || filter === 3) && <Project name="ChatCore"
+                              description="A chat control plugin for Minecraft servers, written in Java. This plugin is an administrative tool for servers to control and manage their chat, prevent spam, prevent swearing, and more. 200+ downloads and 5+ 5 star reviews."
+                              tools={["Java"]} demo="https://www.mc-market.org/resources/13998/"
+                              github="https://github.com/nhulston/ChatCore" img={chatCore}/>}
                     {(filter === 0 || filter === 1) && <Project name="Bubbl"
                               description="A noninvasive approach to COVID contact tracing using a hassle-free social networking app that prioritizes private group connections between workers or students."
                               tools={["Android", "Java", "Firebase"]} demo="https://www.youtube.com/watch?v=6LKnVMz8Dgw"
