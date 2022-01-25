@@ -31,7 +31,7 @@ const Technologies = () => {
                     <Technology title="Mobile" description={`Experience with\nFlutter and Android`} icon={icons[0]}/>
                     <Technology title="Web" description={`Experience with\nReact.js and CSS`} icon={icons[1]}/>
                     <Technology title="Blockchain" description={`Ethereum, Solana, and\nCardano smart contracts`} icon={icons[2]}/>
-                    <Technology title="UI/UX" description={`Skilled with Figma\nand graphic design`} icon={icons[3]}/>
+                    <Technology title="UI/UX" description={`Design tools such as Figma,\nPhotoshop, and Illustrator`} icon={icons[3]}/>
                 </ul>
             </div>
             <div className={sectionStyles.divider} id="awards"/>
