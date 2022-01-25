@@ -77,7 +77,7 @@ const Projects = () => {
                               tools={["React", "Haskell", "Plutus"]} demo="https://jellyswap.io/"
                               github="https://github.com/jellyswap-io/jellyswap-landing-page" img={jellySwap}/>}
                     {(filter === 0 || filter === 3) && <Project name="ChatCore"
-                              description="A chat control plugin for Minecraft servers, written in Java. This plugin is an administrative tool for servers to control and manage their chat, prevent spam, prevent swearing, and more. 200+ downloads and 5+ 5 star reviews."
+                              description="A chat control plugin for Minecraft servers, written in Java. This plugin is an administrative tool for servers to control and manage their chat, prevent spam, prevent swearing, and more. 300+ downloads and 5+ 5 star reviews."
                               tools={["Java"]} demo="https://www.mc-market.org/resources/13998/"
                               github="https://github.com/nhulston/ChatCore" img={chatCore}/>}
                     {(filter === 0 || filter === 1) && <Project name="Bubbl"
