@@ -12,6 +12,7 @@ import nftHighlights from '/public/projects/nftHighlights.png';
 import swipe from '/public/projects/swipe.png';
 import nhulston from '/public/projects/nhulston.png';
 import chatCore from '/public/projects/chatcore.png';
+import wordle from '/public/projects/6wordle.png';
 import Project from "./Project";
 import Aos from "aos";
 
@@ -69,6 +70,10 @@ const Projects = () => {
                     <span className={styles.selected}>Other</span>
                 </h1>}
                 <div className={styles.projectsWrapper}>
+                    {(filter === 0 || filter === 2) && <Project name="6Wordle"
+                                description="A clone of the popular word game, WORDLE, but with six-letter words instead of five. Built entirely from scratch. Includes mobile and desktop support. You can view the word by checking console with inspect element :)"
+                                tools={["React", "NextJS", "JavaScript", "CSS"]} demo="https://6wordle.vercel.app/"
+                                github="https://github.com/nhulston/6wordle-ui" img={wordle}/>}
                     {(filter === 0 || filter === 1) && <Project name="NCR Check-In"
                               description="An IOS and Android app for NCR employees to refer restaurants as sales leads. Employees can earn points, achievements, and monetary rewards for successful referrals. Generated 200+ sales leads for NCR POS systems."
                               tools={["Flutter", "GCP", "JavaScript"]} img={ncr}/>}
