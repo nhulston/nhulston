@@ -85,15 +85,6 @@ const Projects = () => {
                               description="A chat control plugin for Minecraft servers, written in Java. This plugin is an administrative tool for servers to control and manage their chat, prevent spam, prevent swearing, and more. 300+ downloads and 5+ 5 star reviews."
                               tools={["Java"]} demo="https://www.mc-market.org/resources/13998/"
                               github="https://github.com/nhulston/ChatCore" img={chatCore}/>}
-                    {(filter === 0 || filter === 1) && <Project name="Bubbl"
-                              description="A noninvasive approach to COVID contact tracing using a hassle-free social networking app that prioritizes private group connections between workers or students."
-                              tools={["Android", "Java", "Firebase"]} demo="https://www.youtube.com/watch?v=6LKnVMz8Dgw"
-                              github="https://github.com/smithbois/bubbl" img={bubbl}/>}
-                    {(filter === 0 || filter === 1) && <Project name="Grocery Grab"
-                              description="A mobile app that reduces COVID spread by reducing time spent in store. It improves shopping efficiency by introducing pathfinding, contactless checkout, and augmented reality."
-                              tools={["Android", "Java", "AR Core", "Firebase"]}
-                              demo="https://devpost.com/software/grocery-grab"
-                              github="https://github.com/smithbois/grocery-grab" img={groceryGrab}/>}
                     {(filter === 0 || filter === 1) && <Project name="Ghost Grub"
                               description="A mobile app that lets consumers simultaneously order from multiple restaurants in the same ghost kitchen. This will increase revenue for ghost kitchen restaurants and decrease consumer transaction costs."
                               tools={["Flutter", "GCP", "JavaScript"]} demo="https://youtu.be/l62Z9cnUG2o"
@@ -114,6 +105,15 @@ const Projects = () => {
                     {(filter === 0 || filter === 2) && <Project name="Reactive Portfolio" description="A responsive portfolio website built in React. It includes various effects and annimations to engage the user."
                               tools={["React", "JavaScript"]} github="https://github.com/nhulston/nhulston"
                               img={nhulston}/>}
+                    {(filter === 0 || filter === 1) && <Project name="Bubbl"
+                                                                description="A noninvasive approach to COVID contact tracing using a hassle-free social networking app that prioritizes private group connections between workers or students."
+                                                                tools={["Android", "Java", "Firebase"]} demo="https://www.youtube.com/watch?v=6LKnVMz8Dgw"
+                                                                github="https://github.com/smithbois/bubbl" img={bubbl}/>}
+                    {(filter === 0 || filter === 1) && <Project name="Grocery Grab"
+                                                                description="A mobile app that reduces COVID spread by reducing time spent in store. It improves shopping efficiency by introducing pathfinding, contactless checkout, and augmented reality."
+                                                                tools={["Android", "Java", "AR Core", "Firebase"]}
+                                                                demo="https://devpost.com/software/grocery-grab"
+                                                                github="https://github.com/smithbois/grocery-grab" img={groceryGrab}/>}
                     {/*<Project name="" description="" tools={[""]} demo="" github="" img={''}/>*/}
                 </div>
             </div>
