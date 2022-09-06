@@ -13,6 +13,8 @@ import swipe from '/public/projects/swipe.png';
 import nhulston from '/public/projects/nhulston.png';
 import chatCore from '/public/projects/chatcore.png';
 import wordle from '/public/projects/6wordle.png';
+import sorting from '/public/projects/sorting.png';
+import foxes from '/public/projects/foxes.png';
 import Project from "./Project";
 import Aos from "aos";
 
@@ -70,20 +72,33 @@ const Projects = () => {
                     <span className={styles.selected}>Other</span>
                 </h1>}
                 <div className={styles.projectsWrapper}>
+                    {(filter === 0 || filter === 2) && <Project name="Sorting Visualizer"
+                                description="React web app for visualizing sorting algorithms using Next.js and Styled Components. Includes bubble sort, heap sort, quick sort, and selection sort."
+                                tools={["React", "NextJS", "JavaScript", "CSS"]} demo="https://sortingvisual.vercel.app/"
+                                github="https://github.com/nhulston/sorting-visualizer" img={sorting}/>}
+                    {(filter === 0 || filter === 1) && <Project name="Grocery Grab"
+                                description="A mobile app that reduces COVID spread by reducing time spent in store. It improves shopping efficiency by introducing pathfinding, contactless checkout, and augmented reality."
+                                tools={["Android", "Java", "AR Core", "Firebase"]}
+                                demo="https://devpost.com/software/grocery-grab"
+                                github="https://github.com/smithbois/grocery-grab" img={groceryGrab}/>}
+                    {(filter === 0 || filter === 2) && <Project name="Fresh Foxes"
+                                description="Landing page and artwork for the Fresh Foxes NFT project. Built with Next.js and hand-drawn in Photoshop."
+                                tools={["React", "NextJS", "JavaScript", "CSS"]} demo="https://freshfoxes.io/"
+                                github="https://github.com/nhulston/fresh-foxes" img={foxes}/>}
+                    {(filter === 0 || filter === 1) && <Project name="NCR Check-In"
+                                description="An IOS and Android app for NCR employees to refer restaurants as sales leads. Employees can earn points, achievements, and monetary rewards for successful referrals. Generated 200+ sales leads for NCR POS systems."
+                                tools={["Flutter", "GCP", "JavaScript"]} img={ncr}/>}
                     {(filter === 0 || filter === 2) && <Project name="6Wordle"
-                                description="A clone of the popular word game, WORDLE, but with six-letter words instead of five. Built entirely from scratch. Includes mobile and desktop support. You can view the word by checking console with inspect element :)"
+                                description="A clone of the popular word game, WORDLE, but with six-letter words instead of five. Built entirely from scratch. Includes mobile and desktop support."
                                 tools={["React", "NextJS", "JavaScript", "CSS"]} demo="https://6wordle.vercel.app/"
                                 github="https://github.com/nhulston/6wordle-ui" img={wordle}/>}
-                    {(filter === 0 || filter === 1) && <Project name="NCR Check-In"
-                              description="An IOS and Android app for NCR employees to refer restaurants as sales leads. Employees can earn points, achievements, and monetary rewards for successful referrals. Generated 200+ sales leads for NCR POS systems."
-                              tools={["Flutter", "GCP", "JavaScript"]} img={ncr}/>}
                     {(filter === 0 || filter === 2) && <Project name="Jelly Swap"
                               description="Building a decentralized crypto exchange on the Cardano blockchain. My roles include front-end dev, smart contract dev, and marketing."
                               tools={["React", "Haskell", "Plutus"]} demo="https://jellyswap.io/"
                               github="https://github.com/jellyswap-io/jellyswap-landing-page" img={jellySwap}/>}
                     {(filter === 0 || filter === 3) && <Project name="ChatCore"
-                              description="A chat control plugin for Minecraft servers, written in Java. This plugin is an administrative tool for servers to control and manage their chat, prevent spam, prevent swearing, and more. 300+ downloads and 5+ 5 star reviews."
-                              tools={["Java"]} demo="https://www.mc-market.org/resources/13998/"
+                              description="A chat control plugin for Minecraft servers, written in Java. This plugin is an administrative tool for servers to control and manage their chat, prevent spam, prevent swearing, and more. 800+ downloads."
+                              tools={["Java"]} demo="https://www.spigotmc.org/resources/chat-core-manage-control-format-your-chat-chat-hovering-click-events-and-more.97447/"
                               github="https://github.com/nhulston/ChatCore" img={chatCore}/>}
                     {(filter === 0 || filter === 1) && <Project name="Ghost Grub"
                               description="A mobile app that lets consumers simultaneously order from multiple restaurants in the same ghost kitchen. This will increase revenue for ghost kitchen restaurants and decrease consumer transaction costs."
@@ -109,11 +124,6 @@ const Projects = () => {
                                                                 description="A noninvasive approach to COVID contact tracing using a hassle-free social networking app that prioritizes private group connections between workers or students."
                                                                 tools={["Android", "Java", "Firebase"]} demo="https://www.youtube.com/watch?v=6LKnVMz8Dgw"
                                                                 github="https://github.com/smithbois/bubbl" img={bubbl}/>}
-                    {(filter === 0 || filter === 1) && <Project name="Grocery Grab"
-                                                                description="A mobile app that reduces COVID spread by reducing time spent in store. It improves shopping efficiency by introducing pathfinding, contactless checkout, and augmented reality."
-                                                                tools={["Android", "Java", "AR Core", "Firebase"]}
-                                                                demo="https://devpost.com/software/grocery-grab"
-                                                                github="https://github.com/smithbois/grocery-grab" img={groceryGrab}/>}
                     {/*<Project name="" description="" tools={[""]} demo="" github="" img={''}/>*/}
                 </div>
             </div>
