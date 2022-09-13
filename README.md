@@ -1,4 +1,4 @@
-👋 Thanks for looking at my GitHub profile!  
+👋 Welcome to my GitHub profile!  
   
 🔗 Here are some useful links  
 • [Resume](https://www.nhulston.com/pdf/Nicholas-Hulston-Resume.pdf)  
